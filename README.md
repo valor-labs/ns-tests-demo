@@ -29,9 +29,9 @@ It's quite easy: `npm test`
 
 ## Pay attention to:
 
-* Tests here are based on `Mocha`
+* Tests here are based on `Mocha` and they are asynchronous.
 * Here is a [test runner](https://github.com/VS-work/ns-tests-demo/blob/master/package.json#L15). Change `android` to `ios` if you want to test under iOS.
-* Put tests (https://github.com/VS-work/ns-tests-demo/blob/master/src/tests/example.ts)[here]
+* Put tests [here](https://github.com/VS-work/ns-tests-demo/blob/master/src/tests/example.ts)
 * You can apply timeout (as a maximum test execution limit) for [all tests](https://github.com/VS-work/ns-tests-demo/blob/master/src/tests/example.ts#L6) and for [individual test](https://github.com/VS-work/ns-tests-demo/blob/master/src/tests/example.ts#L31).
 * NativeScript has own `Test Bed` [tools](https://github.com/VS-work/ns-tests-demo/blob/master/src/tests/example.ts#L2)
 
