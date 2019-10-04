@@ -1,0 +1,17 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Home"></Label>
+</ActionBar>
+
+<FlexboxLayout flexDirection="column">
+<FlexboxLayout flexDirection="row" height="100">
+  <Button text="Add all" (tap)="addAll()" ></Button>
+  <Button text="Remove all" (tap)="startRemoving()"></Button>
+</FlexboxLayout>
+<GridLayout class="page page-content">
+    <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['../item', item.id]" [text]="item.name" class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+</GridLayout>
+</FlexboxLayout>
